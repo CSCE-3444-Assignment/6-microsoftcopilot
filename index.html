@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLADE - Swords and Axes</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body styles */
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
+        /* Header styles */
+        header {
+            background-color: #000;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #ffd700; /* Golden color */
+        }
+        /* Sword details styles */
+        .sword-details {
+            margin: 20px;
+        }
+        .sword-name {
+            font-size: 24px;
+            color: #c0c0c0; /* Silver color */
+        }
+        /* Mouse-following stars script */
+        <script>
+            document.addEventListener('mousemove', (e) => {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = e.clientX + 'px';
+                star.style.top = e.clientY + 'px';
+                document.body.appendChild(star);
+                setTimeout(() => {
+                    star.remove();
+                }, 1000);
+            });
+        </script>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BLADE</h1>
+        <p>Makers of Fine Swords and Axes</p>
+    </header>
+    <div class="sword-details">
+        <div class="sword-name">Excalibur</div>
+        <p>The legendary sword wielded by King Arthur.</p>
+    </div>
+    <!-- Add more sword details here -->
+</body>
+</html>
